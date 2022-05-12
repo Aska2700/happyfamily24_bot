@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 
 # main variables
-TOKEN = ""
+TOKEN = "5338479683:AAFQgMg09iYoyxuNmotHauenuDtxIIHmH8M"
 bot = telebot.TeleBot(TOKEN)
 
 
@@ -50,6 +50,8 @@ main_markup.add(main_markup_btn1, main_markup_btn2, main_markup_btn3, main_marku
 
 projects = types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
 projects_btn1 = types.KeyboardButton('Проект1')
+projects_btn2 = types.KeyboardButton('Проект2')
 projects.add(projects_btn1)
+
 
 bot.polling(none_stop=True, interval=0)
